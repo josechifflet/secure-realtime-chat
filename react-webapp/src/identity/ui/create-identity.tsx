@@ -8,9 +8,9 @@ export default function CreateIdentity(): JSX.Element {
     const [wss, setWss] = useState('wss://56f7nk7zkg.execute-api.us-west-2.amazonaws.com/temp')
     const [apiKey, setApiKey] = useState('')
 
-    const createID = async () => {
+    const createID = async () => 
         await createIdentity(username, url, wss, apiKey)
-    }
+    
 
     return (
         <div className="inputset">

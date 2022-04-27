@@ -1,6 +1,17 @@
 import * as mongoose from 'mongoose';
 import { default as config } from '../env/index';
 
+type LoggerLevel = Readonly<{
+    readonly ERROR: "error";
+    readonly WARN: "warn";
+    readonly INFO: "info";
+    readonly DEBUG: "debug";
+    readonly error: "error";
+    readonly warn: "warn";
+    readonly info: "info";
+    readonly debug: "debug";
+}>;
+
 /**
  * @interface IConnectOptions
  */
@@ -8,7 +19,7 @@ interface IConnectOptions {
     autoReconnect: boolean;
     reconnectTries: number; // Never stop trying to reconnect
     reconnectInterval: number;
-    loggerLevel?: string;
+    loggerLevel?: LoggerLevel;
     useNewUrlParser: true;
     useUnifiedTopology: true;
 }

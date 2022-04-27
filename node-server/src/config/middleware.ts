@@ -3,7 +3,7 @@ import * as compression from 'compression';
 import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
 import * as cors from 'cors';
-import * as helmet from 'helmet';
+import helmet from 'helmet';
 import { IServer } from '../interfaces/ServerInterface';
 import { renderFile } from 'ejs';
 import * as path from 'path';
