@@ -1,0 +1,7 @@
+node_modules
+.serverless
+.webpack
+**/repositories/index.ts
+src/types/consts.ts
+src/api/**/*/routes.ts
+src/api/services/interfaces.ts

@@ -1,7 +1,7 @@
 const secret = {
-	secretKey: 'My-Secret-Key',
+  secretKey: 'My-Secret-Key',
 };
 
-const JWT_TOKEN = {secret};
+const JWT_TOKEN = { secret };
 
 export default JWT_TOKEN;

@@ -5,5 +5,5 @@ import * as express from 'express';
  * @interface IServer
  */
 export interface IServer {
-    app: express.Application;
+  app: express.Application;
 }

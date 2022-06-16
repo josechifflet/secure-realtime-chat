@@ -8,7 +8,11 @@
         "start": "node ./build/src/index.js",
         "ts:watch": "tsc -w",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "seed": "node ./scripts/seed.ts"
+        "seed": "node ./scripts/seed.ts",
+        "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+        "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
+        "lint": "eslint src/**/*.ts",
+        "format": "eslint --fix --ext .ts ."
     },
     "files": [
         "src"
@@ -54,7 +58,15 @@
         "@types/helmet": "0.0.42",
         "@types/node": "^8.10.38",
         "@types/socket.io": "^2.1.11",
+        "@typescript-eslint/eslint-plugin": "^5.28.0",
+        "eslint": "^8.17.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.0.0",
         "nodemon": "^2.0.15",
+        "onchange": "^7.1.0",
+        "prettier": "^2.7.0",
         "source-map-loader": "^0.2.4",
         "ts-loader": "^5.3.1",
         "ts-node": "^6.2.0",

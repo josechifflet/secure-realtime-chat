@@ -1,11 +1,11 @@
 // default config
 
 const config: any = {
-    port: process.env.PORT || 3000,
-    env: 'development',
-    database: {
-        client: 'mongodb'
-    }
+  port: process.env.PORT || 3000,
+  env: 'development',
+  database: {
+    client: 'mongodb',
+  },
 };
 
 // Set the current environment or default to 'development'
